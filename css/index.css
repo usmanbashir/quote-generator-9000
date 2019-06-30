@@ -1,0 +1,40 @@
+.jumbotron {
+  color: #fff;
+}
+
+.jumbotron .lead {
+  font-weight: 400;
+}
+
+.btn-group label {
+  cursor: pointer;
+}
+
+.quotes-list {
+  color: #fff;
+}
+.quotes-list hr {
+  border-color: #666;
+}
+
+.quotes-list-container {
+  color: #fff;
+}
+.quotes-list-container hr {
+  border-color: #666;
+}
+.quotes-list-container .blockquote {
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1.6rem;
+}
+.quotes-list-container .blockquote::before {
+  content: "“";
+  float: left;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-right: .8rem;
+}
+.quotes-list-container .blockquote p::first-letter {
+  text-transform: uppercase;
+}

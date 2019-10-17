@@ -72,7 +72,7 @@ function init() {
     .addEventListener('click', onGenerateQuoteClick);
 
   // Trigger the click event for the quote generation so we have at least
-  // have a quote on page load.
+  // a quote on page load.
   document.querySelector('#generateQuote').click();
 }
 
@@ -101,7 +101,7 @@ function onGenerateQuoteClick(event) {
   }
 
   // Build a list of quotes to be shown to the user.
-  let listOfQuotes = [];
+  const listOfQuotes = [];
   
   for (let index = 0; index < numberOfQuotes; index++) {
     listOfQuotes.push(buildQuote(quotesSource));
@@ -127,7 +127,7 @@ function onGenerateQuoteClick(event) {
 function buildQuote(fragments) {
   // Build an Array containing the beginning, middle, and end sections
   // for the sentence.
-  let sections = [
+  const sections = [
     getFragment(fragments, "BEGINNING"),
     getFragment(fragments, "MIDDLE"),
     getFragment(fragments, "END")
@@ -145,7 +145,7 @@ function buildQuote(fragments) {
 // or if there is no exclamation/question mark.
 function tidyEndOfSentence(sentence) {
   // Get the last character for the sentence.
-  let lastCharacter = sentence.charAt(sentence.length -1);
+  const lastCharacter = sentence.charAt(sentence.length -1);
 
   if(lastCharacter === "!") { return sentence; }
   if(lastCharacter === "?") { return sentence; }
